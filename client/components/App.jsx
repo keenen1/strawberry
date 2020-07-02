@@ -1,13 +1,17 @@
 import React from 'react'
 
-import Words from './Words'
-import AddWord from './AddWord'
+import Title from './Title'
+import Sliders from './Sliders'
+import Results from './Results'
 
-const App = () => (
-  <div className='app-container'>
-    <Words />
-    <AddWord />
-  </div>
-)
+const App = () => {
+  return (
+    <>
+      <Title />
+      <Sliders />
+      <Results />
+    </>
+  )
+}
 
 export default App
