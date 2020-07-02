@@ -4,8 +4,7 @@ import { Button } from '@material-ui/core'
 import Danceability from './Danceability'
 
 // handleChangeButton = (e) => {
-//   alert(e.target.value)
-//   this.props.setFieldValue('degreeLevel', e.target.value)
+//   Click of the run button will dispatch the {value} to store and replace the console log below
 // }
 
 const Sliders = () => {
