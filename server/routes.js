@@ -20,6 +20,8 @@ const data = require('./data')
 router.get('/', (req, res) => {
   console.log(data)
   res.json(data)
-}
+})
 
 module.exports = router
+
+// module.exports = router
