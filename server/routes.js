@@ -3,7 +3,6 @@ const request = require('superagent')
 
 const router = express.Router()
 
-
 // const spotifyUrl = 'https://api.spotify.com/v1/search'
 const data = require('./data')
 
@@ -22,6 +21,5 @@ router.get('/', (req, res) => {
   console.log(data)
   res.json(data)
 }
-
 
 module.exports = router
