@@ -18,8 +18,8 @@ const data = require('./data')
 // })
 
 router.get('/', (req, res) => {
-  console.log(data)
+//   console.log(data)
   res.json(data)
-}
+})
 
 module.exports = router
