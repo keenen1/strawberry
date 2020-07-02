@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
     .get(`${spotifyUrl}`)
     .set('Accept', 'application/json')
     .set('Content-Type', 'application/json')
-    .set('Authorization', `Bearer BQANu2EWW7VwpL5HAZTrhheqs1B7w7SmpGcJmX3OJ9G-LJfc5S0mIoyJPOyBJ61IFTorTNTYu7YmoBUv_lFsKwl4fGDiEfRHVeO1bi8yFT9OH1WwRJH4P1Fm-GHmG4z6JumVajDGmUmjRXo`)
+    .set('Authorization', `Bearer BQAHiyYY_PHTZi8vsF6kwuz0DrcngFn68EyRzNEQtfDQilTcEN-nUyvR-j_mOhFvip6mIqVeB9KUhZ6klqwlwn3k_bBRkQ5QSUO3QJurzSoiOS3O78fxBqzoPix4KIt8WoZn7AvEehUXqBM`)
     .then(response => {
       console.log('server-side: ', response.body)
     })
