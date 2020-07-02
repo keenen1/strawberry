@@ -5,8 +5,6 @@ import Title from './Title'
 import Sliders from './Sliders'
 import Results from './Results'
 
-
-
 const App = () => {
   return (
     <>
