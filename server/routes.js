@@ -13,7 +13,8 @@ router.get('/', (req, res) => {
     .set('Content-Type', 'application/json')
     .set('Authorization', `Bearer BQAHiyYY_PHTZi8vsF6kwuz0DrcngFn68EyRzNEQtfDQilTcEN-nUyvR-j_mOhFvip6mIqVeB9KUhZ6klqwlwn3k_bBRkQ5QSUO3QJurzSoiOS3O78fxBqzoPix4KIt8WoZn7AvEehUXqBM`)
     .then(response => {
-      console.log('server-side: ', response.body)
+      console.log('server-side: ', response.body.artists)
+      res.json(response.body.artist)
     })
 })
 
