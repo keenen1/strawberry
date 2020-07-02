@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
 })
 
 router.get('/', (req, res) => {
-  console.log(data)
+//   console.log(data)
   res.json(data)
 })
 
