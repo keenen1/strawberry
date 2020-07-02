@@ -2,29 +2,14 @@ import React from 'react'
 
 // Import material UI font modules
 import Typography from '@material-ui/core/Typography'
-import { makeStyles } from '@material-ui/core/styles'
+// import { makeStyles } from '@material-ui/core/styles'
 
 import { getSpotifyData } from '../api'
-
-// const useStyles = makeStyles({
-//   root: {
-//     height: 300
-//   }
-// })
-// const classes = useStyles()
 
 class Results extends React.Component {
   state = {
     songs: []
   }
-
-  // useStyles = () => makeStyles({
-  //   root: {
-  //     height: 300
-  //   }
-  // })
-
-  // classes = useStyles()
 
   componentDidMount () {
     getSpotifyData()
