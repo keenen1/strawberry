@@ -1,39 +1,46 @@
-# A starter project for React/Redux
+# Spotify 3rd Party App
 
-> A minimalistic React/Redux starter project
+(Insert App Summary)
 
-To use:
+# Team Roles
+Kim - 
 
-* Fork this repo
-* Rename your repo according to the app you're building
+Keenen - Git Master | Foundation Setup
+
+Pete - Collect API
+
+Zac - Tests
+
+# How to use
+
+Fork this repo and install ready-to-go dependencies
 
 ```sh
-git clone https://github.com/[your-org]/[your-app].git
-cd [your-app] && npm i
+git clone https://github.com/matai-2020/strawberry.git
+cd strawberry
+npm i
 ```
 
-This is the structure of this boilerplate:
+Strawberry Filesystem Starting Point:
 
 ```sh
 .
 ├── client
 │   ├── actions
-│   │   └── index.js
+│   │   └── (insert index.js)
 │   ├── components
 │   │   ├── AddWord.jsx
-│   │   ├── App.jsx
-│   │   ├── Word.jsx
-│   │   └── Words.jsx
+│   │   ├── (insert components)
 │   ├── reducers
-│   │   ├── index.js
-│   │   └── words.js
+│   │   ├── index.js (combine reducers)
+│   │   └── (insert sub-reducers)
 │   └── index.js
-├── public
-│   ├── index.html
-│   └── main.css
 ├── server
 │   ├── index.js
-│   └── server.js
+│   ├── server.js
+│   └── public
+│       ├── index.js
+│       └── server.js
 ├── .gitignore
 ├── package.json
 ├── README.md
