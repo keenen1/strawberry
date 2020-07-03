@@ -1,8 +1,10 @@
 import React from 'react'
 
 import '@testing-library/jest-dom'
+import { createStore } from 'redux'
+import { render, fireEvent, screen } from './test-utils'
+import '@testing-library/jest-dom/extend-expect'
 import Results from './Results'
-import { render, screen } from '@testing-library/react'
 
 test('shows track name from songs', () => {
   render(<Results />)
