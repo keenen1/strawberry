@@ -11,9 +11,9 @@ const data = require('./data')
 //     .get(`${spotifyUrl}`)
 //     .set('Accept', 'application/json')
 //     .set('Content-Type', 'application/json')
-//     .set('Authorization', `Bearer BQAHiyYY_PHTZi8vsF6kwuz0DrcngFn68EyRzNEQtfDQilTcEN-nUyvR-j_mOhFvip6mIqVeB9KUhZ6klqwlwn3k_bBRkQ5QSUO3QJurzSoiOS3O78fxBqzoPix4KIt8WoZn7AvEehUXqBM`)
+//     .set('Authorization', `Bearer BQCk7UWuP-Nu00u8v7ybMZBXpWmr6Of_ekXoPV0ozR2WiPC7CgFopVPsasDc34xZliZUhHu_jYRlxGRkrQ4Yk6Ju6zR4LDhZ3qau64KRxZ7-X8M5hUDLDHNimGtKH5o4gUzxS__-qOqc0V0`)
 //     .then(response => {
-//       console.log('server-side: ', response.body.artist)
+//       console.log('server-side: ', response.body.artists)
 //       res.json(response.body.artist)
 //     })
 // })
@@ -24,5 +24,3 @@ router.get('/', (req, res) => {
 })
 
 module.exports = router
-
-// module.exports = router
