@@ -42,7 +42,6 @@ const Danceability = ({ dispatch }) => {
   return (
     <>
       <div className='slideTitle'>Danceability</div>
-     
 
       <div className={classes.root}>
         <Slider
@@ -58,15 +57,6 @@ const Danceability = ({ dispatch }) => {
           max={1}
         />
       </div>
-      {/* <div>
-        <Button
-          variant="outlined"
-          color="primary"
-          disableElevation
-        >
-            Run
-        </Button>
-      </div> */}
     </>
   )
 }
