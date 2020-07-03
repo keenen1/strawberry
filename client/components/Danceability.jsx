@@ -74,7 +74,7 @@ const Danceability = ({ dispatch }) => {
 
 function handleChange (e, dispatch) {
   const danceValue = e.target.getAttribute('aria-valuetext')
-  console.log(danceValue)
+  // console.log(danceValue)
   dispatch(addDanceability(danceValue))
 }
 
