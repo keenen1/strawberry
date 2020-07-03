@@ -6,11 +6,24 @@ body {
 }
 
 #title {
-  border: solid 1px blue;
+  /* border: solid 1px blue; */
   padding: 30px;
   margin: 30px;
   font-size: 6.0rem;
+  color: white;
+}
 
+.subtitle {
+  font-size: 5rem;
+}
+
+.results {
+  font-size: 5rem;
+  color: white;
+  font-weight: 550;
+  padding: 0px;
+  margin: 10px;
+  /* border: solid 1px yellow; */
 }
 
 table, thead, td {
@@ -19,9 +32,11 @@ table, thead, td {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: rgb(0, 0, 0);
+  /* background-color: rgb(0, 0, 0); */
   color: white;
+  border-radius: 10pt;
 }
+
 
 .tableHeaders {
   font-size: 4rem;
@@ -31,4 +46,11 @@ table, thead, td {
 
 .tableBody {
   font-size: 1.5rem;
+  background-color: rgb(35, 102, 35);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
 }
