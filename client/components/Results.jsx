@@ -1,9 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-// Import material UI font modules
-// import { makeStyles } from '@material-ui/core/styles'
-
 import { getSpotifyData } from '../api'
 
 import data from '../../server/data'

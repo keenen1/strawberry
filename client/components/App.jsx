@@ -7,9 +7,11 @@ import Results from './Results'
 const App = () => {
   return (
     <>
-      <Title />
-      <Sliders />
-      <Results />
+      <div className='box'>
+        <Title />
+        <Sliders />
+        <Results />
+      </div>
     </>
   )
 }

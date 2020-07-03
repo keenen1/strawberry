@@ -41,9 +41,9 @@ const Danceability = ({ dispatch }) => {
 
   return (
     <>
-      <Typography id="vertical-slider" className='subtitle' gutterBottom>
-      Danceability
-      </Typography>
+      <div className='slideTitle'>Danceability</div>
+     
+
       <div className={classes.root}>
         <Slider
           orientation="vertical"
