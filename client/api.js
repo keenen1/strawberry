@@ -8,7 +8,7 @@ export function getSpotifyData () {
   return request
     .get(serverUrl)
     .then(response => {
-      console.log('client-side api.js: ', response.body)
-      return response.body
+      console.log('client-side api.js: ', response.body['audio_features'])
+      return response.body['audio_features']
     })
 }
