@@ -13,11 +13,12 @@ const useStyles = makeStyles({
 const Title = () => {
   const classes = useStyles()
   return (
-
-    <div className={classes.root}>
-      <Typography variant="h1" component="h2" gutterBottom>
+    <div>
+      <div className={classes.root} id='title'>
+        <Typography variant="h1" component="h2">
         Spotify Track Sliders
-      </Typography>
+        </Typography>
+      </div>
     </div>
   )
 }
