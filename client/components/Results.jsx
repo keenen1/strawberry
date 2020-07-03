@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 // Import material UI font modules
-import Typography from '@material-ui/core/Typography'
 // import { makeStyles } from '@material-ui/core/styles'
 
 import { getSpotifyData } from '../api'
@@ -11,7 +10,6 @@ import data from '../../server/data'
 
 const Results = ({ danceReducer }) => {
   const songs = data['audio_features']
-
   return (
     <div className="">
       <Typography variant="h3" component="h4" >
@@ -38,6 +36,9 @@ const Results = ({ danceReducer }) => {
           })}
         </tbody>
       </table>
+      <>
+        <img src='./images/new4.png' />
+      </>
     </div>
   )
 }

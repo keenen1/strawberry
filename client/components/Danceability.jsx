@@ -42,7 +42,7 @@ const Danceability = ({ dispatch }) => {
 
   return (
     <>
-      <Typography id="vertical-slider" gutterBottom>
+      <Typography id="vertical-slider" className='subtitle' gutterBottom>
       Danceability
       </Typography>
       <div className={classes.root}>
