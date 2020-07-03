@@ -1,12 +1,12 @@
 const initialDanceState = {
-  danceability_value: 0
+  danceValue: 0
 }
 
 const danceReducer = (state = initialDanceState, action) => {
   switch (action.type) {
     case 'ADD_DANCE':
       return {
-        danceability_value: action.danceability_value
+        danceValue: action.danceValue
       }
     default:
       return state

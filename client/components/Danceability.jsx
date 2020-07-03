@@ -1,11 +1,15 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { Button } from '@material-ui/core'
 
 // Import material UI font modules
 import Typography from '@material-ui/core/Typography'
-import { makeStyles} from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
 
 // Import material UI slider module
 import { Slider } from '@material-ui/core'
+
+import { addDanceability } from '../actions'
 
 const useStyles = makeStyles({
   root: {
@@ -13,7 +17,7 @@ const useStyles = makeStyles({
   }
 })
 
-// This value is the new value in the slider. 
+// This value is the new value in the slider.
 function valuetext (value) {
   return `${value}`
 }
@@ -33,7 +37,7 @@ const marks = [
   }
 ]
 
-const Tempo = () => {
+const Danceability = ({ dispatch }) => {
   const classes = useStyles()
 
   return (
@@ -49,13 +53,29 @@ const Tempo = () => {
           getAriaValueText={valuetext}
           marks={marks}
           valueLabelDisplay="on"
+          onChange={(e) => handleChange(e, dispatch)}
           min={0}
           step={0.1}
           max={1}
         />
       </div>
+      {/* <div>
+        <Button
+          variant="outlined"
+          color="primary"
+          disableElevation
+        >
+            Run
+        </Button>
+      </div> */}
     </>
   )
 }
 
-export default Tempo
+function handleChange (e, dispatch) {
+  const danceValue = e.target.getAttribute('aria-valuetext')
+  console.log(danceValue)
+  dispatch(addDanceability(danceValue))
+}
+
+export default connect()(Danceability)

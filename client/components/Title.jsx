@@ -16,7 +16,7 @@ const Title = () => {
 
     <div className={classes.root}>
       <Typography variant="h1" component="h2" gutterBottom>
-      Spotify Track Sliders
+        Spotify Track Sliders
       </Typography>
     </div>
   )
