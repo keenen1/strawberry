@@ -1,0 +1,7 @@
+table, thead, td {
+  border: 1px solid black;
+}
+
+.table-headers {
+  font-style: strong;
+}

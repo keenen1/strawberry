@@ -2,6 +2,8 @@ import request from 'superagent'
 
 const serverUrl = 'http://localhost:3000/api/v1'
 
+// const audioFeatures = 'audio_features'
+
 export function getSpotifyData () {
   return request
     .get(serverUrl)
