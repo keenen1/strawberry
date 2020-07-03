@@ -1,7 +1,6 @@
 import React from 'react'
 
 // Import material UI font modules
-import Typography from '@material-ui/core/Typography'
 // import { makeStyles } from '@material-ui/core/styles'
 
 import { getSpotifyData } from '../api'
@@ -24,9 +23,10 @@ class Results extends React.Component {
     return (
       // <div className={this.classes.root}>
       <div className="">
-        <Typography variant="h3" component="h4" >
-          Results
-        </Typography>
+        <div className="results">
+          <p>Results</p>
+        </div>
+      
 
         <table>
           <thead className='tableHeaders'>
@@ -56,6 +56,7 @@ class Results extends React.Component {
             })
           }
         </ul> */}
+        <img src='./images/new4.png' />
       </div>
     )
   }
