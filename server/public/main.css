@@ -2,13 +2,15 @@ body {
   background-color: rgb(46, 46, 46);
   text-align: center;
   margin: 0 auto;
-
+  font-family: 'Lato', sans-serif;
 }
 
 #title {
   border: solid 1px blue;
   padding: 30px;
   margin: 30px;
+  font-size: 6.0rem;
+
 }
 
 table, thead, td {
