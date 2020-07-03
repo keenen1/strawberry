@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 // Import material UI font modules
-import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 
 // Import material UI slider module
@@ -63,7 +62,6 @@ const Danceability = ({ dispatch }) => {
 
 function handleChange (e, dispatch) {
   const danceValue = e.target.getAttribute('aria-valuetext')
-  // console.log(danceValue)
   dispatch(addDanceability(danceValue))
 }
 
