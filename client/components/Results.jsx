@@ -1,9 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-// Import material UI font modules
-// import { makeStyles } from '@material-ui/core/styles'
-
 import { getSpotifyData } from '../api'
 
 import data from '../../server/data'
@@ -12,10 +9,6 @@ const Results = ({ danceReducer }) => {
   const songs = data['audio_features']
   return (
     <div className="">
-      {/* <div className='results'>
-          Results
-      </div> */}
-
       <table>
         <thead className='tableHeaders'>
           <tr>
