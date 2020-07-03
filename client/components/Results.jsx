@@ -1,8 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import { getSpotifyData } from '../api'
-
 import data from '../../server/data'
 
 const Results = ({ danceReducer }) => {
