@@ -9,9 +9,6 @@ const Title = () => {
       <div className='header' id='title'>
         Spotify Track Sliders
       </div>
-      <div>
-        {/* <img src='./images/new.png' /> */}
-      </div>
     </div>
   )
 }
