@@ -14,3 +14,7 @@ const danceReducer = (state = initialDanceState, action) => {
 }
 
 export default danceReducer
+
+//the reducer knows which action to do based on the type passed in at action
+// the return value that is placed in the STORE AND NOW GLOBALLY ACCESSIBLE is
+// called DANCEREDUCER and DANCEVALUE is needed to access it where we call it

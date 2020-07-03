@@ -41,5 +41,6 @@ const mapStateToProps = (state) => {
     danceReducer: state.danceReducer['danceValue']
   }
 }
+//this is where we call our items from the STORE using the name
 
 export default connect(mapStateToProps)(Results)

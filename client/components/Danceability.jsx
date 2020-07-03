@@ -53,6 +53,7 @@ const Danceability = ({ dispatch }) => {
           marks={marks}
           valueLabelDisplay="on"
           onChange={(e) => handleChange(e, dispatch)}
+          // this is the event that changes our state and is passsed to redux
           min={0}
           step={0.1}
           max={1}
@@ -76,5 +77,6 @@ function handleChange (e, dispatch) {
   // console.log(danceValue)
   dispatch(addDanceability(danceValue))
 }
+// our handle change function DISPATCHES the change
 
 export default connect()(Danceability)

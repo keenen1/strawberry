@@ -4,3 +4,6 @@ export function addDanceability (danceValue) {
     danceValue
   }
 }
+
+// this function called from the component that the change occured
+// the type is used for the reducer to 'know' what to do
