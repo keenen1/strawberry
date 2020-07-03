@@ -24,19 +24,19 @@ class Results extends React.Component {
     return (
       // <div className={this.classes.root}>
       <div className="">
-        <Typography variant="h3" component="h4" gutterBottom>
+        <Typography variant="h3" component="h4" >
           Results
         </Typography>
 
         <table>
-          <thead>
+          <thead className='tableHeaders'>
             <tr>
-              <td>Song</td>
-              <td>Artist</td>
+              <td>Songs</td>
+              <td>Artists</td>
               <td>Tempo</td>
             </tr>
           </thead>
-          <tbody>
+          <tbody className='tableBody'>
             {this.state.songs.map(song => {
               return <tr key={song.id}>
                 <td>{song['track_name']}</td>
