@@ -1,6 +1,5 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Button } from '@material-ui/core'
 
 // Import material UI font modules
 import Typography from '@material-ui/core/Typography'

@@ -12,10 +12,6 @@ const Results = ({ danceReducer }) => {
   const songs = data['audio_features']
   return (
     <div className="">
-      <Typography variant="h3" component="h4" >
-          Results
-      </Typography>
-
       <table>
         <thead className='tableHeaders'>
           <tr>
