@@ -1,65 +1,52 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 // Import material UI font modules
 // import { makeStyles } from '@material-ui/core/styles'
 
 import { getSpotifyData } from '../api'
 
-class Results extends React.Component {
-  state = {
-    songs: []
-  }
+import data from '../../server/data'
 
-  componentDidMount () {
-    getSpotifyData()
-      .then(songsArr => {
-        this.setState({
-          songs: songsArr
-        })
-      })
-  }
+const Results = ({ danceReducer }) => {
+  const songs = data['audio_features']
+  return (
+    <div className="">
+      <Typography variant="h3" component="h4" >
+          Results
+      </Typography>
 
-  render () {
-    return (
-      // <div className={this.classes.root}>
-      <div className="">
-        <div className="results">
-          <p>Results</p>
-        </div>
-      
-
-        <table>
-          <thead className='tableHeaders'>
-            <tr>
-              <td>Songs</td>
-              <td>Artists</td>
-              <td>Tempo</td>
-            </tr>
-          </thead>
-          <tbody className='tableBody'>
-            {this.state.songs.map(song => {
+      <table>
+        <thead className='tableHeaders'>
+          <tr>
+            <td>Songs</td>
+            <td>Artists</td>
+            <td>Danceability</td>
+          </tr>
+        </thead>
+        <tbody className='tableBody'>
+          {songs.map(song => {
+            if (song['danceability'] <= danceReducer) {
               return <tr key={song.id}>
                 <td>{song['track_name']}</td>
                 <td>{song['artist']}</td>
-                <td>{song['tempo']}</td>
+                <td>{song['danceability']}</td>
               </tr>
-            })}
-          </tbody>
-        </table>
-
-        {/* <ul>
-          {
-            this.state.songs.map(song => {
-              return <li key={song.id}>
-                {song['track_name']}
-              </li>
-            })
-          }
-        </ul> */}
+            }
+          })}
+        </tbody>
+      </table>
+      <>
         <img src='./images/new4.png' />
-      </div>
-    )
+      </>
+    </div>
+  )
+}
+
+const mapStateToProps = (state) => {
+  return {
+    danceReducer: state.danceReducer['danceValue']
   }
 }
 
-export default Results
+export default connect(mapStateToProps)(Results)
