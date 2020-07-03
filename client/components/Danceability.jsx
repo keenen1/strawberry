@@ -2,7 +2,7 @@ import React from 'react'
 
 // Import material UI font modules
 import Typography from '@material-ui/core/Typography'
-import { makeStyles, withStyles } from '@material-ui/core/styles'
+import { makeStyles} from '@material-ui/core/styles'
 
 // Import material UI slider module
 import { Slider } from '@material-ui/core'
@@ -13,6 +13,7 @@ const useStyles = makeStyles({
   }
 })
 
+// This value is the new value in the slider. 
 function valuetext (value) {
   return `${value}`
 }
@@ -22,10 +23,10 @@ const marks = [
     value: 0,
     label: '0'
   },
-  // {
-  //   value: 0.5,
-  //   label: '0.5'
-  // },
+  {
+    value: 0.5,
+    label: '0.5'
+  },
   {
     value: 1,
     label: '1'
@@ -48,8 +49,6 @@ const Tempo = () => {
           getAriaValueText={valuetext}
           marks={marks}
           valueLabelDisplay="on"
-          // To define handleChange
-          // onChange={handleChange}
           min={0}
           step={0.1}
           max={1}
